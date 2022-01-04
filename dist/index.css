@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  height: 100vh;
+}
+
+.container .app {
+  background: lightgray;
+  padding: 0.2em;
+  -webkit-box-shadow: 2px 2px 2px lightgray;
+          box-shadow: 2px 2px 2px lightgray;
+}
+
+.container .app .display {
+  background: white;
+  padding: 0.2em 0.3em;
+  font-size: 3rem;
+  text-align: right;
+  -webkit-box-shadow: 1px 1px 1px white;
+          box-shadow: 1px 1px 1px white;
+}
+
+.container .app .pads {
+  padding: 0.3em 0.2em;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "plus minus divide multiply" "seven eight nine  equal" "four  five  six   equal" "one   two   three equal" "zero  dot   clear ac";
+  -ms-grid-columns: (80px)[4];
+      grid-template-columns: repeat(4, 80px);
+  -ms-grid-rows: (60px)[5];
+      grid-template-rows: repeat(5, 60px);
+  gap: 0.2em;
+}
+
+.container .app .pads .pad {
+  background: gray;
+  color: black;
+  font-size: 2rem;
+  -webkit-box-shadow: 1px 1px 1px #999;
+          box-shadow: 1px 1px 1px #999;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.container .app .pads .pad:hover {
+  background: black;
+  color: gray;
+}
+
+.container .app .pads .pad:active {
+  background: black;
+  color: gray;
+  -webkit-transform: translate(1px, 1px);
+          transform: translate(1px, 1px);
+}
+
+.container .app .pads .plus {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: plus;
+}
+
+.container .app .pads .minus {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: minus;
+}
+
+.container .app .pads .divide {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: divide;
+}
+
+.container .app .pads .multiply {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: multiply;
+}
+
+.container .app .pads .one {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+.container .app .pads .two {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: two;
+}
+
+.container .app .pads .three {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: three;
+}
+
+.container .app .pads .four {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: four;
+}
+
+.container .app .pads .five {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: five;
+}
+
+.container .app .pads .six {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: six;
+}
+
+.container .app .pads .seven {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: seven;
+}
+
+.container .app .pads .eight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: eight;
+}
+
+.container .app .pads .nine {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: nine;
+}
+
+.container .app .pads .dot {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: dot;
+}
+
+.container .app .pads .clear {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: clear;
+}
+
+.container .app .pads .ac {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: ac;
+}
+
+.container .app .pads .equal {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: equal;
+}
+/*# sourceMappingURL=index.css.map */

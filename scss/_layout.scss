@@ -1,0 +1,108 @@
+.container{
+    height: 100vh;
+
+    .app{
+        background: lightgray;
+        padding: 0.2em;
+        box-shadow: 2px 2px 2px lightgray;
+
+        .display{
+            background: white;
+            // width: 400px;
+            padding: 0.2em 0.3em;
+            font-size: 3rem;
+            text-align: right;
+            box-shadow: 1px 1px 1px white;
+        }
+
+        .pads{
+            padding: 0.3em 0.2em;
+            display: grid;
+            grid-template-areas: "plus minus divide multiply"
+                                 "seven eight nine  equal"
+                                 "four  five  six   equal"
+                                 "one   two   three equal"
+                                 "zero  dot   clear ac";
+            grid-template-columns: repeat(4, 80px);
+            grid-template-rows: repeat(5, 60px);
+            gap: 0.2em;
+
+            .pad{
+                background: gray;
+                color: black;
+                font-size: 2rem;
+                box-shadow: 1px 1px 1px #999;
+                transition: all 200ms ease-in-out;
+
+                &:hover{
+                    background: black;
+                    color: gray;
+                }
+
+                &:active{
+                    background: black;
+                    color: gray;
+                    transform: translate(1px,1px);
+                }
+            }
+
+        
+            .plus{
+                grid-area: plus;
+            }
+            .minus{
+                grid-area: minus;
+            }
+            .divide{
+                grid-area: divide;
+            }
+            .multiply{
+                grid-area: multiply;
+            }
+            .one{
+                grid-area: one;
+            }
+            .two{
+                grid-area: two;
+            }
+            .three{
+                grid-area: three;
+            }
+            .four{
+                grid-area: four;
+            }
+            .five{
+                grid-area: five;
+            }
+            .six{
+                grid-area: six;
+            }
+            .seven{
+                grid-area: seven;
+            }
+            .eight{
+                grid-area: eight;
+            }
+            .nine{
+                grid-area: nine;
+            }
+            .dot{
+                grid-area: dot;
+            }
+            .clear{
+                grid-area: clear;
+            }
+            .ac{
+                grid-area: ac;
+            }
+            .equal{
+                grid-area: equal;
+            }
+
+
+        }
+    }
+
+
+
+}
